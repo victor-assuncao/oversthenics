@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/global.css">
@@ -22,8 +25,13 @@
     <link rel="stylesheet" href="./css/athlete.css">
     <link rel="stylesheet" href="./css/journey.css">
     <link rel="stylesheet" href="./css/footer.css">
+
+    <link rel="stylesheet" href="./css/modalAthlete.css">
+    <link rel="stylesheet" href="./css/icons.css">
 </head>
 <body>
+
+    <div id="modal-container" class="modal-container"></div>
     
     <header id="header" class="header">
 
@@ -148,7 +156,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
 
         <h1 class="about__title is-section-title">Mas o que realmente é o <span class="is-secondary">Street Workout?</span></h1>
 
@@ -161,7 +169,7 @@
         </p>
     </section>
 
-    <section class="athletes">
+    <section id="athletes" class="athletes">
 
         <h1 class="athletes__title is-section-title">
 
@@ -172,42 +180,42 @@
         
         <div class="container">
 
-            <div class="athlete">
+            <div id="athlete" class="athlete" data-name="andrea">
 
                 <div class="athlete__gradient"></div>
 
                 <p class="athlete__name">Andrea Larosa</p>
             </div>
 
-            <div class="athlete">
+            <div id="athlete" class="athlete" data-name="hefesto">
 
                 <div class="athlete__gradient"></div>
 
                 <p class="athlete__name">Hefesto Girl</p>
             </div>
 
-            <div class="athlete">
+            <div id="athlete" class="athlete" data-name="andry">
 
                 <div class="athlete__gradient"></div>
 
                 <p class="athlete__name">Andry Strong</p>
             </div>
 
-            <div class="athlete">
+            <div id="athlete" class="athlete" data-name="pivet">
 
                 <div class="athlete__gradient"></div>
 
                 <p class="athlete__name">Pivet</p>
             </div>
 
-            <div class="athlete">
+            <div id="athlete" class="athlete" data-name="chris">
 
                 <div class="athlete__gradient"></div>
 
                 <p class="athlete__name">Chris Heria</p>
             </div>
 
-            <div class="athlete">
+            <div id="athlete" class="athlete" data-name="frank">
 
                 <div class="athlete__gradient"></div>
 
@@ -216,7 +224,7 @@
         </div>
     </section>
 
-    <section class="journey">
+    <section id="journey" class="journey">
 
         <h1 class="journey__title is-section-title">
 
@@ -242,7 +250,32 @@
         </p>
     </footer>
 
+    <!-- templates -->
+    <script type="text/template" id="modal-athlete-template">
+
+        <div id="modal-background" class="modalBackground"></div>
+
+        <div id="modal" class="modal">
+
+            <span id="modal-back" class="material-symbols-outlined modal__back">
+                cancel
+            </span>
+
+            <iframe 
+                class="modal__video"
+                src="https://www.youtube.com/embed/{{ url }}" 
+                title="YouTube video player"  
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </script>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.0/mustache.min.js" integrity="sha512-ZtynsaJmQRo6Ru0RHAPHnMfmTCLSTRcAoxbl5csw47H9EbEZWpns3URyVNgAvj6KQvEM6ysjTQZ3jj61go0NsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <!-- JS -->
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
 </body>
 </html>
