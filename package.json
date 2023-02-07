@@ -1,0 +1,22 @@
+{
+  "name": "oversthenics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-assuncao/oversthenics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor-assuncao/oversthenics/issues"
+  },
+  "homepage": "https://github.com/victor-assuncao/oversthenics#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
