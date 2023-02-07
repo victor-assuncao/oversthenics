@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #182526;
+    --secondary-color: #D99F6C;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.is-secondary {
+    color: var(--secondary-color);
+}
+
+.is-section-title {
+    font-size: 5rem;
+    text-align: center;
+}

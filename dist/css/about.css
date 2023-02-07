@@ -1,0 +1,14 @@
+.about {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 80px 60px;
+}
+
+.about__title {
+    margin-bottom: 60px;
+}
+
+.about__description {
+    font-size: 2.6rem;
+    text-align: center;
+}

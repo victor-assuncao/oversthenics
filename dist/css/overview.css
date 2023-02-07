@@ -1,0 +1,39 @@
+.overview {
+    background: #fff url("../img/home_retangule.png") no-repeat left;
+    display: flex;
+    gap: 80px;
+    padding: 120px 60px;
+}
+
+.overview > .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.overview__video {
+    border: none;
+    width: 100%;
+}
+
+.overview__title {
+    color: #fff;
+    font-size: 5.8rem;
+    margin-bottom: 20px;
+    width: 460px;
+}
+
+.overview__owner {
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.overview__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.overview__link:hover {
+    text-decoration: underline;
+}

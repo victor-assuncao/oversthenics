@@ -1,0 +1,31 @@
+.benefits {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px;
+}
+
+.benefits__title {
+    margin-bottom: 80px;
+}
+
+.benefits > .container {
+    display: flex;
+    gap: 75px;
+}
+
+.benefits__benefit {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits__icon {
+    border-radius: 100%;
+}
+
+.benefits__description {
+    font-size: 3rem;
+    font-weight: 700;
+}

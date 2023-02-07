@@ -1,0 +1,9 @@
+.journey {
+    padding: 0 60px 100px;
+}
+
+.journey__text {
+    font-size: 2.6rem;
+    margin-top: 60px;
+    text-align: center;
+}
