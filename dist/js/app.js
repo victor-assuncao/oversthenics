@@ -1,4 +1,5 @@
 import { Data } from "./data.js";
+import { Header } from "./header.js";
 // Trocar o estado do header quando scrolar a tela
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
@@ -28,3 +29,4 @@ document.querySelectorAll('#athlete').forEach((element) => {
         });
     });
 });
+new Header();

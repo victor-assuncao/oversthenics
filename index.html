@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
 
     <!-- Icons -->
+    <link rel="shortcut icon" href="./dist/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/css/reset.css">
     <link rel="stylesheet" href="./dist/css/global.css">
     <link rel="stylesheet" href="./dist/css/header.css">
+    <link rel="stylesheet" href="./dist/css/navigation.css">
     <link rel="stylesheet" href="./dist/css/banner.css">
     <link rel="stylesheet" href="./dist/css/overview.css">
     <link rel="stylesheet" href="./dist/css/benefits.css">
@@ -28,6 +30,7 @@
 
     <link rel="stylesheet" href="./dist/css/modalAthlete.css">
     <link rel="stylesheet" href="./dist/css/icons.css">
+    <link rel="stylesheet" href="./dist/css/shape.css">
 </head>
 <body>
 
@@ -35,34 +38,77 @@
     
     <header id="header" class="header">
 
-        <nav class="header__navigation">
+        <div id="header-menu" class="header__menu">
 
-            <ul class="header__list">
+            <div class="header__bar"></div>
+            <div class="header__bar"></div>
+            <div class="header__bar"></div>
+        </div>
 
-                <li class="header__item">
-                    <a href="#home" class="header__link">Inicio</a>
-                </li>
+        <div class="desktop">
 
-                <li class="header__item">
-                    <a href="#benefits" class="header__link">Beneficios</a>
-                </li>
+            <nav class="nav">
 
-                <li class="header__item">
-                    <a href="#about" class="header__link">Sobre</a>
-                </li>
+                <ul class="nav__list">
 
-                <li class="header__item">
-                    <a href="#athletes" class="header__link">Atletas</a>
-                </li>
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Inicio</a>
+                    </li>
 
-                <li class="header__item">
-                    <a href="#journey" class="header__link">Jornada</a>
-                </li>
-            </ul>
-        </nav>
+                    <li class="nav__item">
+                        <a href="#benefits" class="nav__link">Beneficios</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#athletes" class="nav__link">Atletas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#journey" class="nav__link">Jornada</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="mobile" class="mobile is-invisible">
+
+            <nav class="nav">
+
+                <span id="nav-close" class="nav__close material-symbols-outlined">
+                    close
+                </span>
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#benefits" class="nav__link">Beneficios</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#athletes" class="nav__link">Atletas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#journey" class="nav__link">Jornada</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <a href="#" class="container">
-            <img class="header__logo" src="./dist/img/logo.png" alt="Logo da marca">
+            <img class="header__logo" src="./dist/img/header_logo.png" alt="Logo da marca">
         </a>
     </header>
 
@@ -99,13 +145,19 @@
             </p>
         </div>
 
-        <iframe 
-            class="overview__video"
-            src="https://www.youtube.com/embed/bU7Ue4xF3YI" 
-            title="YouTube video player"  
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-        </iframe>
+        <div class="container">
+
+            <div class="container">
+
+                <iframe 
+                    class="overview__video"
+                    src="https://www.youtube.com/embed/bU7Ue4xF3YI" 
+                    title="YouTube video player"  
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
     </section>
 
     <section id="benefits" class="benefits">
@@ -167,6 +219,12 @@
             geralmente é feito em praças onde há barras fixas e paralelas, mas não 
             significa que não possa ser feito em casa, ou em uma academia por exemplo.
         </p>
+
+        <div class="custom-shape-divider-bottom-1675898806">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </section>
 
     <section id="athletes" class="athletes">
@@ -263,7 +321,7 @@
 
             <iframe 
                 class="modal__video"
-                src="https://www.youtube.com/embed/{{ url }}" 
+                src="https://www.youtube.com/embed/{{ url }}?autoplay=1" 
                 title="YouTube video player"  
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>

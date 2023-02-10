@@ -1,7 +1,8 @@
 .about {
+    position: relative;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 80px 60px;
+    padding: 80px 60px 130px;
 }
 
 .about__title {

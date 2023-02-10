@@ -1,4 +1,5 @@
 import { Data } from "./data.js";
+import { Header } from "./header.js";
 
 declare const Mustache: any;
 declare const $: any;
@@ -46,3 +47,5 @@ document.querySelectorAll('#athlete').forEach((element: HTMLElement) => {
         })
     });
 });
+
+new Header();

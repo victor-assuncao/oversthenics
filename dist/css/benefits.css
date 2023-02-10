@@ -13,6 +13,8 @@
 .benefits > .container {
     display: flex;
     gap: 75px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .benefits__benefit {
@@ -23,9 +25,12 @@
 
 .benefits__icon {
     border-radius: 100%;
+    width: 100px;
+
 }
 
 .benefits__description {
     font-size: 3rem;
     font-weight: 700;
+    text-align: center;
 }
