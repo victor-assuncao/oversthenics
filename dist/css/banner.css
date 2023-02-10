@@ -4,8 +4,10 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 100px); /* 100px são do header*/
+    min-height: calc(100vh - 100px); /* 100px são do header*/
     justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
     position: relative;
 }
 
@@ -34,4 +36,12 @@
 .banner__subtitle {
     letter-spacing: 0.2em;
     font-size: 3.6rem;
+}
+
+@media (max-width: 650px) {
+
+    .banner__title {
+        font-size: 7.5rem;
+        letter-spacing: 0.1em;
+    }
 }

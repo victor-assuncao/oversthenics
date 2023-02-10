@@ -2,7 +2,8 @@
     position: relative;
     background-color: var(--primary-color);
     color: #fff;
-    padding: 80px 60px 130px;
+    padding-top: 80px;
+    padding-bottom: 130px;
 }
 
 .about__title {

@@ -77,3 +77,12 @@
 .athlete:nth-child(6) {
     background-image: url("../img/atletas/frank_medrano.jpg");
 }
+
+/* Responsive */
+
+@media (max-width: 350px) {
+
+    .athlete {
+        min-width: 320px;
+    }
+}

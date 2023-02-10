@@ -21,6 +21,10 @@ body {
     color: var(--secondary-color);
 }
 
+.side-margins {
+    padding: 0 60px;
+}
+
 .is-section-title {
     font-size: 5rem;
     text-align: center;
@@ -28,4 +32,18 @@ body {
 
 .is-invisible {
     display: none;
+}
+
+@media (max-width: 768px) {
+
+    .side-margins {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .side-margins {
+        padding: 0 20px;
+    }
 }
