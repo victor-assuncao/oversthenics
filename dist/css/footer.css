@@ -2,8 +2,15 @@
     align-items: center;
     background-color: var(--primary-color);
     display: flex;
-    height: 100px;
-    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    width: 250px;
 }
 
 .footer__createdBy {
@@ -13,10 +20,16 @@
 
 .footer__link {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
 
 .footer__link:hover {
-    color: #fff;
     text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+
+    .footer {
+        justify-content: center;
+    }
 }

@@ -9,7 +9,7 @@
 .nav__link {
     color: #fff;
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
 }
 
 /* Desktop Navigation */
@@ -24,7 +24,7 @@
 
 .mobile {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,14 +35,11 @@
 .mobile nav {
     padding: 20px;
     background-color: var(--secondary-color);
-    position: fixed;
     flex-direction: column;
     display: flex;
     gap: 20px;
-    top: 0;
-    left: 0;
     height: 100%;
-    width: 300px;
+    max-width: 500px;
     z-index: 10;
 }
 

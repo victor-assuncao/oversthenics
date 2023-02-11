@@ -22,8 +22,8 @@
     flex: 1;
     height: 600px;
     justify-content: center;
-    max-width: 500px;
-    min-width: 350px;
+    max-width: 650px;
+    min-width: 320px;
     padding: 0 10px;
     position: relative;
     
@@ -79,10 +79,3 @@
 }
 
 /* Responsive */
-
-@media (max-width: 350px) {
-
-    .athlete {
-        min-width: 320px;
-    }
-}

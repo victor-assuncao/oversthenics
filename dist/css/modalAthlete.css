@@ -27,8 +27,8 @@
 .modal__back {
     position: absolute;
     color: #fff;
-    top: -40px;
-    right: -40px;
+    top: 20px;
+    right: 20px;
     font-size: 36px;
     cursor: pointer;
 }
@@ -38,4 +38,10 @@
     border-radius: 10px;
     height: 100%;
     width: 100%;
+}
+
+@media (max-width: 1080px) {
+    .modal {
+        width: 90%;
+    }
 }

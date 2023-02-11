@@ -104,3 +104,22 @@
         z-index: -1;
     }
 }
+
+@media (max-width: 768px) {
+
+    .overview {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .overview__title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .overview__title {
+        font-size: 4.6rem;
+    }
+}

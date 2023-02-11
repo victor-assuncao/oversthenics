@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 80px inherit;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .benefits__title {
