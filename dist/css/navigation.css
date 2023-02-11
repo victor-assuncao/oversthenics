@@ -9,7 +9,7 @@
 .nav__link {
     color: #fff;
     text-decoration: none;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
 }
 
 /* Desktop Navigation */
@@ -52,6 +52,10 @@
 .mobile .nav__item {
     text-align: center;
     
+}
+
+.mobile .nav__link {
+    font-size: 2.8rem;
 }
 
 .mobile .nav__close {
